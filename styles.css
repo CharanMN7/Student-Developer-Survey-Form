@@ -1,0 +1,164 @@
+
+body {
+font-family: Tahoma;
+background: url(Survey\ form\ background.jpg);
+background-attachment: fixed;
+background-position: right;
+background-size: cover;
+color: #ffffff;
+margin: 0;
+margin-top: -2rem;
+backdrop-filter: blur(40px);
+}
+
+.space-ship {
+backdrop-filter: blur(500px);
+}
+
+header {
+text-align: center;
+margin: 0;
+}
+
+header h1 {
+padding-top: 20px;
+font-size: 44px;
+}
+
+#description {
+font-size: 24px;
+font-style: italic;
+}
+
+form, header {
+max-width: 600px;
+margin: 0 auto;
+min-width: 300px;
+}
+
+form {
+background-color: rgba(0, 0, 0, 0.5);
+border-radius:10px;
+padding: 15px;
+}
+
+fieldset{
+max-width: 600px;
+min-width: 300px;
+border: none;
+}
+
+input[type="text"], input[type="email"]{
+width: 100%;
+margin: 0.5em auto 1em auto;
+height: 2.6em;
+background-color: black;
+border: 1px solid white;
+border-radius: 5px;
+color: white;
+font-size: 16px;
+}
+
+input[type="number"]{
+width: 20%;
+height: 2em;
+background-color: black;
+border: 1px solid white;
+border-radius: 5px;
+color: white;
+font-size: 16px;
+}
+
+select {
+height: 2.2em;
+background-color: black;
+border: 1px solid white;
+border-radius: 5px;
+color: white;
+font-size: 16px;
+}
+
+label[name="a1"], label[name="a2"], label[name="type"] {
+display: block;
+}
+
+textarea {
+display: block;
+margin: 0.5em auto;
+font-size: 16px;
+background-color: black;
+color: white;
+}
+
+.checks{
+height: 1.5em;
+width: 1.5em;
+vertical-align: middle;
+margin: 1em auto 1.125em 0;
+color: black;
+}
+
+fieldset[name="start"], fieldset[name="questions-label"] {
+border-bottom: 2px solid rgb(1, 63, 1);
+}
+
+input[type="submit"] {
+color:white;
+display: block;
+margin: 2em auto;
+font-size: 24px;
+padding: 10px 15px;
+background-color: black;
+border: 1.5px solid white;
+border-radius: 7px;
+}
+
+input[type="submit"]:hover {
+color: black;
+background-color: white;
+border: 1.5px solid rgb(82, 81, 123);
+}
+
+footer {
+max-width: 600px;
+margin: 15px auto 0 auto;
+padding: 15px;
+min-width: 300px;
+background-color: rgba(0, 0, 0, 0.5);
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
+font-size: 14px;
+color: grey;
+text-align: center;
+}
+
+footer ul {
+list-style: none;
+margin:0;
+padding:0;
+}
+
+footer ul li {
+display: inline;
+padding: 0 2em;
+}
+
+footer a {
+text-decoration: none;
+color: white;
+}
+
+footer a:visited {
+color: white;
+}
+
+footer a:hover {
+text-decoration: underline;
+}
+
+@media (max-width:700px) {
+    form, footer {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}

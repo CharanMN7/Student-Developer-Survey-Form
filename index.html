@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Developer Survey</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+</head>
+<body>
+<div class="space-ship">
+    <header>
+        <h1 id="title">Student Developer Survey</h1>
+        <p id="description" class="head_part">Welcome to Student Developer Survey 2022!</p>
+    </header>
+    
+    <div class="form-container">
+    <form id="survey-form">
+    <fieldset name="start">
+        <label id="name-label">Enter your name: <input id="name" type="text" required placeholder="Johnny Blaze, Amy Hart, etc." required></label>
+        <label id="email-label">Enter your email: <input id="email" type="email" placeholder="myemail@somemail.com" required></label>
+        <label id="number-label">Enter your age: <input id="number" type="number" required min="14" max="25" required placeholder=">16"></label>
+    </fieldset>
+    <fieldset name="questions-label">
+        
+        <label name="q1" required>
+        <p>Which of the following Editor(s)/IDE(s) do you use?</p>
+        <label name="a1"><input type="checkbox" class="checks" value="VSC"> VS Code</label>
+        <label name="a1"><input type="checkbox" class="checks" value="Eclipse"> Eclipse IDE</label>
+        <label name="a1"><input type="checkbox" class="checks" value="IntelliJ" checked> IntelliJ IDEA</label>
+        <label name="a1"><input type="checkbox" class="checks" value="Spyder"> Spyder</label>
+        <label name="a1"><input type="checkbox" class="checks" value="A-Studio"> Android Studio</label>
+        <label name="a1"><input type="checkbox" class="checks" value="Xcode"> XCode</label>
+        <label name="a1">Others, please specify:<input type="text" placeholder="CodeBlocks, CodeLite, etc."></label>
+    </label>
+    
+    
+    <label name="q2" required>
+        <p>Which of the following programming languages do you use?</p>
+        <label name="a2" value="Python"><input type="checkbox" class="checks" value="Py3"> Python</label>
+        <label name="a2" value="Java"><input type="checkbox" class="checks" value="Java"> Java</label>
+        <label name="a2" value="C++"><input type="checkbox" class="checks" value="C++"> C++</label>
+        <label name="a2" value="Swift"><input type="checkbox" class="checks" value="Swift" checked> Swift</label>
+        <label name="a2" value="C#"><input type="checkbox" class="checks" value="C#"> C#</label>
+        <label name="a2" value="Kotlin"><input type="checkbox" class="checks" value="Kt"> Kotlin</label>
+        <label name="a2" value="JavaScript"><input type="checkbox" class="checks" value="JS"> JavaSript</label>
+        <label name="a2" value="text">Others, please specify: <input type="text" placeholder="Rust, Go, etc."></label>
+    </label>
+    
+    <label name="q3" required>
+        <p>What is your most prefered/favorite programming language?</p>
+        <select id="dropdown">
+        <option name="a3" value="">(select one)</option>
+        <option name="a3" value="Java">Java</option>
+        <option name="a3" value="C++">C++</option>
+        <option name="a3" value=3>C#</option>
+        <option name="a3" value="Python">Python</option>
+        <option name="a3" value="Swift">Swift</option>
+        <option name="a3" value="C">C</option>
+        <option name="a3" value="Rust">Rust</option>
+        <option name="a3" value="Kotlin">Kotlin</option>
+        <option name="a3" value="JavaScript">JavaScript</option>
+        <option name="a3" value="Go">Go</option>
+        <option name="a3" value="Other">Other</option>
+        </select>
+    </label>
+    
+    <label name="q3" required>
+        <p>What is your most prefered/favorite Editor/IDE?</p>
+        <select>
+        <option name="a3" value="">(select one)</option>
+        <option name="a3" value="Xcode">Xcode</option>
+        <option name="a3" value="VSC">VS Code</option>
+        <option name="a3" value="Spyder">Spyder</option>
+        <option name="a3" value="A-Studio">Android Studio</option>
+        <option name="a3" value="IntelliJ">IntelliJ IDEA</option>
+        <option name="a3" value="Atom">Atom</option>
+        <option name="a3" value="Eclipse">Eclipse IDE</option>
+        <option name="a3" value="CB">CodeBlocks</option>
+        <option name="a3" value="CL">CodeLite</option>
+        <option name="a3" value="Geany">Geany</option>
+        <option name="a3" value="Other">Other</option>
+        </select>
+    </label>
+    
+    <label name="q4"><p>On a scale of 1-10, how much would you rate Kotlin? </p><input type="number" min=0 max=10>
+    </label>
+    <br>
+    <label name="q5">
+        <p>Tell us what you think about Kotlin:</p>
+        <textarea rows="7" cols="24" placeholder="Type something..."></textarea>
+    </label>
+    
+    <label name="q6"><p>On a scale of 1-10, how much would you rate Swift? </p><input type="number" min=0 max=10>
+    </label>
+    <br>
+    <label name="q7">
+        <p>Tell us what you think about Swift:</p>
+        <textarea rows="7" cols="24" placeholder="Type something..."></textarea>
+    </label>
+    
+    <label name="q8"><p>On a scale of 1-10, how much would you rate Javascript? </p><input type="number" min=0 max=10>
+    </label>
+    <br>
+    <label name="q9">
+        <p>Tell us what you think about Javascript:</p>
+        <textarea rows="7" cols="24" placeholder="Type something..."></textarea>
+    </label>
+    
+    </fieldset>
+    <fieldset name="last">
+        <p>How would you like your data reach us?</p>
+        <label name="type"><input name="type" type="radio" class="checks" required checked value="0" > Anonymously</label>
+        <label name="type"><input name="type" type="radio" class="checks" value="1" > With minimal info</label>
+    </fieldset>
+    <input name="Submit" id="submit" type="submit">
+    </form>
+    </div>
+    <div class="footer-container">
+    <footer>
+    <p>Social Links</p>
+    <ul>
+        <li><a href="https://www.linkedin.com/in/charan-manikanta/">LinkedIn</a></li>
+        <li><a href="https://twitter.com/CharanMN7">Twitter</a></li>
+        <li><a href="https://github.com/CharanMN7">GitHub</a></li>
+    </ul>
+    <p>Visit my <a href="#">bio</a></p>
+    <p>&copy Private Pirate 2022</p>
+    </footer>
+    </div>
+</div>
+</body>
+</html>
